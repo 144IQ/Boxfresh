@@ -30,6 +30,6 @@ if __name__ == "__main__":
 
     content = input('\n内容を入力してください\n>>>')
 
-    for i in range(3):
+    for _ in range(3):
         asyncio.ensure_future(send_question(key, content))
     asyncio.get_event_loop().run_forever()
